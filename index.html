@@ -4,6 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      #bgImage {
+        position: relative;
+        width: 100%;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+      }
+      #bgImage::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+      img {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+      }
+      img:after {
+        content: "sadlfjas;ldf";
+      }
+    </style>
   </head>
   <body>
     <form id="todo-form">
@@ -11,7 +35,9 @@
     </form>
     <ul id="todo-list"></ul>
     <div id="clock">00:00:00</div>
+    <div id="bgImage"></div>
     <script src="todo.js"></script>
     <script src="clock.js"></script>
+    <script src="background.js"></script>
   </body>
 </html>
