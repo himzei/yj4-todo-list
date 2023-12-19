@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      li {
+        margin-bottom: 10px;
+        height: 40px;
+        background-color: lightblue;
+      }
       #bgImage {
         position: relative;
         width: 100%;
@@ -37,6 +42,9 @@
         font-size: 30px;
         z-index: 9;
       }
+      .dragging {
+        opacity: 0.05;
+      }
     </style>
   </head>
   <body>
@@ -55,5 +63,6 @@
     <script src="background.js"></script>
     <script src="weather.js"></script>
     <script src="quotes.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

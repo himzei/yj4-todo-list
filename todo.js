@@ -19,6 +19,7 @@ function deleteToDo(event) {
 function paintToDo(newTodo) {
   const li = document.createElement("li");
   li.id = newTodo.id;
+  li.draggable = "true";
   const span = document.createElement("span");
   const button = document.createElement("button");
   button.innerText = "❌";
